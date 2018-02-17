@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Class Initialize Method</Title>
+      <Shortcut>cinit</Shortcut>
+      <Description>Code snippet for a test class initialize method</Description>
+      <Author>Microsoft Corporation</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.VisualStudio.TestTools.UnitTesting</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the class initialize method</ToolTip>
+          <Default>ClassInit</Default>
+        </Literal>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Replace with the name of the TestContext parameter name</ToolTip>
+          <Default>context</Default>
+        </Literal>
+          <Literal Editable="false">
+            <ID>ClassInitialize</ID>
+            <Function>SimpleTypeName(global::Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitialize)</Function>
+          </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[$ClassInitialize$]
+      public static void $name$(TestContext $context$)
+      {
+          $end$
+      }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

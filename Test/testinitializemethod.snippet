@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Test Initialize Method</Title>
+      <Shortcut>testinit</Shortcut>
+      <Description>Code snippet for a test initialize</Description>
+      <Author>Microsoft Corporation</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.VisualStudio.TestTools.UnitTesting</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the test initialize method</ToolTip>
+          <Default>TestInit</Default>
+        </Literal>
+          <Literal Editable="false">
+            <ID>TestInitialize</ID>
+            <Function>SimpleTypeName(global::Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize)</Function>
+          </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[$TestInitialize$]
+      public void $name$()
+      {
+          $end$
+      }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

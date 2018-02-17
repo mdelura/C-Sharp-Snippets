@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Class Cleanup Method</Title>
+      <Shortcut>ccleanup</Shortcut>
+      <Description>Code snippet for a test class cleanup method</Description>
+      <Author>Microsoft Corporation</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.VisualStudio.TestTools.UnitTesting</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the class cleanup method</ToolTip>
+          <Default>ClassCleanup</Default>
+        </Literal>
+          <Literal Editable="false">
+            <ID>ClassCleanup</ID>
+            <Function>SimpleTypeName(global::Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanup)</Function>
+          </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[$ClassCleanup$]
+      public static void $name$()
+      {
+          $end$
+      }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
